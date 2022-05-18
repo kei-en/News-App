@@ -1,4 +1,4 @@
-import { API_KEY, endpoint, country } from "../config/config";
+import { API_KEY, endpoint, country } from "../../.config";
 
 export async function services(category = 'general') {
     let articles = await fetch(`${endpoint}?country=${country}&category=${category}`, {
